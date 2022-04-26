@@ -7,3 +7,9 @@ The project deals with the Quality of Experience of machine-generated texts. The
 The folder "MT Quality Dimensions" contains datasets for the identification and quantification of quality dimensions for Machine Translation.
 
 The folder "SUM Quality Dimensions" contains datasets for the identification and quantification of quality dimensions for Automatic Text Summarization.
+
+
+## Citation
+Please cite the following publication:
+
+Vivien Macketanz, Babak Naderi, Steven Schmidt, and Sebastian Möller. 2022. Perceptual Quality Dimensions of Machine-Generated Text with a Focus on Machine Translation. In: Proceedings of the Workshop on Human Evaluation of NLP Systems (HumEval). Association for Computational Linguistics. (to appear)
