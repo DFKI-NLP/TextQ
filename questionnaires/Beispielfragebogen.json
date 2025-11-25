@@ -1,0 +1,2366 @@
+{
+  "title": "Textqualität anhand von Adjektivlisten bewerten",
+  "description": "In dieser Aufgabe sollst du die Sprache von verschiedenen Texten bewerten. ",
+  "pages": [
+    {
+      "name": "title-01",
+      "title": "Willkommen zur Umfrage",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question-01",
+          "title": "In dieser Umfrage sollst du die Sprache von verschiedenen Texten anhand einer Adjektivliste bewerten.",
+          "html": "<p>In dieser Umfrage sollst du die Sprache von verschiedenen Texten anhand einer Adjektivliste bewerten. Hierzu werden dir insgesamt 17 Texte gezeigt, 2 davon in einer kleinen Trainingseinheit am Anfang, die restlichen 15 in der eigentlichen Untersuchung.</p> Die Texte können fehlerhaft sein, müssen aber nicht. Bitte bewerte jeden Text in Hinblick auf die verwendete Sprache (inklusive Satzzeichen). Zuerst sollst du die Gesamtqualität des Satzes auf einer Skala von gut bis schlecht bewerten. Im nächsten Schritt bewertest du verschiedene Aspekte des Textes mit Hilfe der Adjektivliste. <p> Die Adjektivliste enthält vier gegensätzliche Adjektivpaare, die an beiden Enden einer Skala von -3 bis +3 stehen. Bitte lies dir die Adjektivliste sorgfältig durch und schiebe für jedes Adjektivpaar den Slider auf der Skala dorthin, wo der Wert deiner Meinung nach die Sprache des jeweiligen Satzes am besten beschreibt.</p> <p>Versuche, den Inhalt der Sätze nicht in deine Bewertung miteinfließen zu lassen.</p>Alle deine Antworten aus dem folgenden Fragebogen werden anonym behandelt und dienen ausschließlich dem Zweck dieser wissenschaftlichen Arbeit.<p>Achtung: Das Ergebnis dieser Umfrage ist sehr wichtig für uns und andere Wissenschaftler*innen, die in diesem Bereich arbeiten. Wir verfügen über Methoden, um die Einheitlichkeit deiner Antworten zu überprüfen. Wir werden diese Methoden nutzen, um die Qualität der abgeschickten Aufgaben zu bewerten.</p>Auf der nächsten Seite beginnt die Trainingseinheit."
+        }
+      ]
+    },
+    {
+      "name": "title-02",
+      "title": "Training",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question02",
+          "html": "Bevor die eigentliche Untersuchung startet, werden dir zunächst zwei Texte mit einer verkürzten Adjektivliste als Training präsentiert. Bitte lies dir jeweils den Text und die Adjektive sorgfältig durch, bevor du deine Bewertung abgibst. Es wird immer zuerst der Text präsentiert und auf der darauffolgenden Seite die Adjektive. "
+        }
+      ]
+    },
+    {
+      "name": "title-03",
+      "title": "Trainingstext 01",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question-03",
+          "html": "<strong> TRAININGSTEXT-01 </strong>"
+        }
+      ]
+    },
+    {
+      "name": "title-04",
+      "title": "Trainingstext 01",
+      "state": "expanded",
+      "elements": [
+        {
+          "type": "panel",
+          "name": "question4",
+          "isRequired": true,
+          "elements": [
+            {
+              "type": "html",
+              "name": "question-04",
+              "html": "<strong> TRAININGSTEXT-01 </strong>\n<p>Bitte bewerte Trainingstext 1 bezüglich der verwendeten Sprache anhand der Adjektiv-Skala. Versuche, den Inhalt des Satzes nicht in deine Bewertung miteinfließen zu lassen. </p>"
+            },
+            {
+              "type": "slider",
+              "name": "slider-01",
+              "title": " Trainigs-Adjektiv-01-negativ — Trainigs-Adjektiv-01-positiv",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "name": "question-05",
+          "visibleIf": "{slider-01} = -3 or {slider-01} = -2 or {slider-01} = -1",
+          "html": "Gut gemacht! Jetzt folgt der zweite Trainingstext. "
+        },
+        {
+          "type": "html",
+          "name": "question-06",
+          "visibleIf": "{slider-01} = 1 or {slider-01} = 2 or {slider-01} = 3 or {slider-01} = 0",
+          "html": "Bist du dir sicher bezüglich deiner Bewertung? Bitte lies dir den Text noch einmal sorgfältig durch und überdenke deine Bewertung!"
+        }
+      ]
+    },
+    {
+      "name": "title-05",
+      "title": "Trainingstext 02",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question-07",
+          "html": "<strong>TRAININGSTEXT-02</strong>"
+        }
+      ]
+    },
+    {
+      "name": "title-06",
+      "title": "Trainingtext 02",
+      "state": "expanded",
+      "elements": [
+        {
+          "type": "panel",
+          "name": "panel1",
+          "isRequired": true,
+          "elements": [
+            {
+              "type": "html",
+              "name": "question-08",
+              "html": "<strong> TRAININGSTEXT-02 </strong>\n<p>Bitte bewerte Trainingstext 2 bezüglich der verwendeten Sprache anhand der Adjektiv-Skala. Versuche, den Inhalt des Satzes nicht in deine Bewertung miteinfließen zu lassen. </p>"
+            },
+            {
+              "type": "slider",
+              "name": "slider-02",
+              "title": "Trainigs-Adjektiv-02-negativ — Trainigs-Adjektiv-02-positiv",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        },
+        {
+          "type": "html",
+          "name": "feedback2-gut",
+          "visibleIf": "{slider-02} = 1 or {slider-02} = 2 or {slider-02} = 3",
+          "html": "Gut gemacht! Das Training ist beendet. Auf der nächsten Seite beginnt die eigentliche Umfrage."
+        },
+        {
+          "type": "html",
+          "name": "question-09",
+          "visibleIf": "{slider-02} = -1 or {slider-02} = -2 or {slider-02} = -3 or {slider-02} = 0",
+          "html": "Bist du dir sicher bezüglich deiner Bewertung? Bitte lies dir den Text noch einmal sorgfältig durch und überdenke deine Bewertung!"
+        }
+      ]
+    },
+    {
+      "name": "title-07",
+      "title": "Text 01",
+      "elements": [
+        {
+          "type": "html",
+          "name": "mt-post01-01",
+          "html": "<strong>###POST01###</strong>\n<p>Bitte bewerte die Sprache des Textes. </p> <p> Bewerte zunächste die Gesamtqualität des Textes und dann auf der darauf folgenden Seite die verwendete Sprache anhand der Adjektiv-Skalen. </p>\n<p>Versuche, den Inhalt des Textes nicht in deine Bewertung miteinfließen zu lassen.</p>"
+        }
+      ]
+    },
+    {
+      "name": "title-08",
+      "title": "Text 01",
+      "elements": [
+        {
+          "type": "html",
+          "name": "mt-post01-02",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST01###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel-01",
+          "elements": [
+            {
+              "type": "html",
+              "name": "mt-question-12",
+              "html": "Bitte bewerte hier zunächste die Gesamtqualität des Textes. "
+            },
+            {
+              "type": "slider",
+              "name": "mt-post01-slider00",
+              "title": "schlecht — gut",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "title-09",
+      "title": "Text 01",
+      "elements": [
+        {
+          "type": "html",
+          "name": "mt-post01-03",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST01###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "post01-mt-08",
+          "elements": [
+            {
+              "type": "html",
+              "name": "mt-question-14",
+              "html": "Bitte bewerte nun die Sprache des Textes anhand der Adjektiv-Skalen. "
+            },
+            {
+              "type": "slider",
+              "name": "mt-post01-slider01",
+              "title": "###ADJECTIVE1LEFT### — ###ADJECTIVE1RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "mt-post01-slider02",
+              "title": "###ADJECTIVE2LEFT### — ###ADJECTIVE2RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "mt-post01-slider03",
+              "title": "###ADJECTIVE3LEFT### — ###ADJECTIVE3RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "mt-post01-slider04",
+              "title": "###ADJECTIVE4LEFT### — ###ADJECTIVE4RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page1",
+      "title": "Text 02",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question1",
+          "html": "<strong>###POST02###</strong>\n<p>Bitte bewerte die Sprache des Textes. </p> <p> Bewerte zunächste die Gesamtqualität des Textes und dann auf der darauf folgenden Seite die verwendete Sprache anhand der Adjektiv-Skalen. </p>\n<p>Versuche, den Inhalt des Textes nicht in deine Bewertung miteinfließen zu lassen.</p>"
+        }
+      ]
+    },
+    {
+      "name": "page2",
+      "title": "Text 02",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question2",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST02###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel2",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question3",
+              "html": "Bitte bewerte hier zunächste die Gesamtqualität des Textes. "
+            },
+            {
+              "type": "slider",
+              "name": "question5",
+              "title": "schlecht — gut",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page3",
+      "title": "Text 02",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question11",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST02###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel3",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question6",
+              "html": "Bitte bewerte nun die Sprache des Textes anhand der Adjektiv-Skalen. "
+            },
+            {
+              "type": "slider",
+              "name": "question7",
+              "title": "###ADJECTIVE1LEFT### — ###ADJECTIVE1RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question8",
+              "title": "###ADJECTIVE2LEFT### — ###ADJECTIVE2RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question9",
+              "title": "###ADJECTIVE3LEFT### — ###ADJECTIVE3RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question10",
+              "title": "###ADJECTIVE4LEFT### — ###ADJECTIVE4RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page4",
+      "title": "Text 03",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question12",
+          "html": "<strong>###POST03###</strong>\n<p>Bitte bewerte die Sprache des Textes. </p> <p> Bewerte zunächste die Gesamtqualität des Textes und dann auf der darauf folgenden Seite die verwendete Sprache anhand der Adjektiv-Skalen. </p>\n<p>Versuche, den Inhalt des Textes nicht in deine Bewertung miteinfließen zu lassen.</p>"
+        }
+      ]
+    },
+    {
+      "name": "page5",
+      "title": "Text 03",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question15",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST03###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel4",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question13",
+              "html": "Bitte bewerte hier zunächste die Gesamtqualität des Textes. "
+            },
+            {
+              "type": "slider",
+              "name": "question14",
+              "title": "schlecht — gut",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page6",
+      "title": "Text 03",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question21",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST03###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel5",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question16",
+              "html": "Bitte bewerte nun die Sprache des Textes anhand der Adjektiv-Skalen. "
+            },
+            {
+              "type": "slider",
+              "name": "question17",
+              "title": "###ADJECTIVE1LEFT### — ###ADJECTIVE1RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question18",
+              "title": "###ADJECTIVE2LEFT### — ###ADJECTIVE2RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question19",
+              "title": "###ADJECTIVE3LEFT### — ###ADJECTIVE3RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question20",
+              "title": "###ADJECTIVE4LEFT### — ###ADJECTIVE4RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page7",
+      "title": "Text 04",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question22",
+          "html": "<strong>###POST04###</strong>\n<p>Bitte bewerte die Sprache des Textes. </p> <p> Bewerte zunächste die Gesamtqualität des Textes und dann auf der darauf folgenden Seite die verwendete Sprache anhand der Adjektiv-Skalen. </p>\n<p>Versuche, den Inhalt des Textes nicht in deine Bewertung miteinfließen zu lassen.</p>"
+        }
+      ]
+    },
+    {
+      "name": "page8",
+      "title": "Text 04",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question25",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST04###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel6",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question23",
+              "html": "Bitte bewerte hier zunächste die Gesamtqualität des Textes. "
+            },
+            {
+              "type": "slider",
+              "name": "question24",
+              "title": "schlecht — gut",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page9",
+      "title": "Text 04",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question31",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST04###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel7",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question26",
+              "html": "Bitte bewerte nun die Sprache des Textes anhand der Adjektiv-Skalen. "
+            },
+            {
+              "type": "slider",
+              "name": "question27",
+              "title": "###ADJECTIVE1LEFT### — ###ADJECTIVE1RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question28",
+              "title": "###ADJECTIVE2LEFT### — ###ADJECTIVE2RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question29",
+              "title": "###ADJECTIVE3LEFT### — ###ADJECTIVE3RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question30",
+              "title": "###ADJECTIVE4LEFT### — ###ADJECTIVE4RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page10",
+      "title": "Text 05",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question32",
+          "html": "<strong>###POST05###</strong>\n<p>Bitte bewerte die Sprache des Textes. </p> <p> Bewerte zunächste die Gesamtqualität des Textes und dann auf der darauf folgenden Seite die verwendete Sprache anhand der Adjektiv-Skalen. </p>\n<p>Versuche, den Inhalt des Textes nicht in deine Bewertung miteinfließen zu lassen.</p>"
+        }
+      ]
+    },
+    {
+      "name": "page11",
+      "title": "Text 05",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question35",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST05###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel8",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question33",
+              "html": "Bitte bewerte hier zunächste die Gesamtqualität des Textes. "
+            },
+            {
+              "type": "slider",
+              "name": "question34",
+              "title": "schlecht — gut",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page12",
+      "title": "Text 05",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question41",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST05###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel9",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question36",
+              "html": "Bitte bewerte nun die Sprache des Textes anhand der Adjektiv-Skalen. "
+            },
+            {
+              "type": "slider",
+              "name": "question37",
+              "title": "###ADJECTIVE1LEFT### — ###ADJECTIVE1RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question38",
+              "title": "###ADJECTIVE2LEFT### — ###ADJECTIVE2RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question39",
+              "title": "###ADJECTIVE3LEFT### — ###ADJECTIVE3RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question40",
+              "title": "###ADJECTIVE4LEFT### — ###ADJECTIVE4RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page13",
+      "title": "Text 06",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question42",
+          "html": "<strong>###POST06###</strong>\n<p>Bitte bewerte die Sprache des Textes. </p> <p> Bewerte zunächste die Gesamtqualität des Textes und dann auf der darauf folgenden Seite die verwendete Sprache anhand der Adjektiv-Skalen. </p>\n<p>Versuche, den Inhalt des Textes nicht in deine Bewertung miteinfließen zu lassen.</p>"
+        }
+      ]
+    },
+    {
+      "name": "page14",
+      "title": "Text 06",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question45",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST06###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel10",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question43",
+              "html": "Bitte bewerte hier zunächste die Gesamtqualität des Textes. "
+            },
+            {
+              "type": "slider",
+              "name": "question44",
+              "title": "schlecht — gut",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page15",
+      "title": "Text 06",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question51",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST06###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel11",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question46",
+              "html": "Bitte bewerte nun die Sprache des Textes anhand der Adjektiv-Skalen. "
+            },
+            {
+              "type": "slider",
+              "name": "question47",
+              "title": "###ADJECTIVE1LEFT### — ###ADJECTIVE1RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question48",
+              "title": "###ADJECTIVE2LEFT### — ###ADJECTIVE2RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question49",
+              "title": "###ADJECTIVE3LEFT### — ###ADJECTIVE3RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question50",
+              "title": "###ADJECTIVE4LEFT### — ###ADJECTIVE4RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page16",
+      "title": "Text 07",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question52",
+          "html": "<strong>###POST07###</strong>\n<p>Bitte bewerte die Sprache des Textes. </p> <p> Bewerte zunächste die Gesamtqualität des Textes und dann auf der darauf folgenden Seite die verwendete Sprache anhand der Adjektiv-Skalen. </p>\n<p>Versuche, den Inhalt des Textes nicht in deine Bewertung miteinfließen zu lassen.</p>"
+        }
+      ]
+    },
+    {
+      "name": "page17",
+      "title": "Text 07",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question55",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST07###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel12",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question53",
+              "html": "Bitte bewerte hier zunächste die Gesamtqualität des Textes. "
+            },
+            {
+              "type": "slider",
+              "name": "question54",
+              "title": "schlecht — gut",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page18",
+      "title": "Text 07",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question61",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST07###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel13",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question56",
+              "html": "Bitte bewerte nun die Sprache des Textes anhand der Adjektiv-Skalen. "
+            },
+            {
+              "type": "slider",
+              "name": "question57",
+              "title": "###ADJECTIVE1LEFT### — ###ADJECTIVE1RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question58",
+              "title": "###ADJECTIVE2LEFT### — ###ADJECTIVE2RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question59",
+              "title": "###ADJECTIVE3LEFT### — ###ADJECTIVE3RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question60",
+              "title": "###ADJECTIVE4LEFT### — ###ADJECTIVE4RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page19",
+      "title": "Text 08",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question62",
+          "html": "<strong>###POST08###</strong>\n<p>Bitte bewerte die Sprache des Textes. </p> <p> Bewerte zunächste die Gesamtqualität des Textes und dann auf der darauf folgenden Seite die verwendete Sprache anhand der Adjektiv-Skalen. </p>\n<p>Versuche, den Inhalt des Textes nicht in deine Bewertung miteinfließen zu lassen.</p>"
+        }
+      ]
+    },
+    {
+      "name": "page20",
+      "title": "Text 08",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question65",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST08###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel14",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question63",
+              "html": "Bitte bewerte hier zunächste die Gesamtqualität des Textes. "
+            },
+            {
+              "type": "slider",
+              "name": "question64",
+              "title": "schlecht — gut",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page21",
+      "title": "Text 08",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question71",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST08###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel15",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question66",
+              "html": "Bitte bewerte nun die Sprache des Textes anhand der Adjektiv-Skalen. "
+            },
+            {
+              "type": "slider",
+              "name": "question67",
+              "title": "###ADJECTIVE1LEFT### — ###ADJECTIVE1RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question68",
+              "title": "###ADJECTIVE2LEFT### — ###ADJECTIVE2RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question69",
+              "title": "###ADJECTIVE3LEFT### — ###ADJECTIVE3RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question70",
+              "title": "###ADJECTIVE4LEFT### — ###ADJECTIVE4RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page22",
+      "title": "Text 09",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question72",
+          "html": "<strong>###POST09###</strong>\n<p>Bitte bewerte die Sprache des Textes. </p> <p> Bewerte zunächste die Gesamtqualität des Textes und dann auf der darauf folgenden Seite die verwendete Sprache anhand der Adjektiv-Skalen. </p>\n<p>Versuche, den Inhalt des Textes nicht in deine Bewertung miteinfließen zu lassen.</p>"
+        }
+      ]
+    },
+    {
+      "name": "page23",
+      "title": "Text 09",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question75",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST09###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel16",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question73",
+              "html": "Bitte bewerte hier zunächste die Gesamtqualität des Textes. "
+            },
+            {
+              "type": "slider",
+              "name": "question74",
+              "title": "schlecht — gut",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page24",
+      "title": "Text 09",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question81",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST09###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel17",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question76",
+              "html": "Bitte bewerte nun die Sprache des Textes anhand der Adjektiv-Skalen. "
+            },
+            {
+              "type": "slider",
+              "name": "question77",
+              "title": "###ADJECTIVE5LEFT### — ###ADJECTIVE5RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question78",
+              "title": "###ADJECTIVE6LEFT### — ###ADJECTIVE6RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question79",
+              "title": "###ADJECTIVE7LEFT### — ###ADJECTIVE7RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question80",
+              "title": "###ADJECTIVE8LEFT### — ###ADJECTIVE8RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page25",
+      "title": "Text 10",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question82",
+          "html": "<strong>###POST10###</strong>\n<p>Bitte bewerte die Sprache des Textes. </p> <p> Bewerte zunächste die Gesamtqualität des Textes und dann auf der darauf folgenden Seite die verwendete Sprache anhand der Adjektiv-Skalen. </p>\n<p>Versuche, den Inhalt des Textes nicht in deine Bewertung miteinfließen zu lassen.</p>"
+        }
+      ]
+    },
+    {
+      "name": "page26",
+      "title": "Text 10\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question85",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST10###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel18",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question83",
+              "html": "Bitte bewerte hier zunächste die Gesamtqualität des Textes. "
+            },
+            {
+              "type": "slider",
+              "name": "question84",
+              "title": "schlecht — gut",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page27",
+      "title": "Text 10\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question91",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST10###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel19",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question86",
+              "html": "Bitte bewerte nun die Sprache des Textes anhand der Adjektiv-Skalen. "
+            },
+            {
+              "type": "slider",
+              "name": "question87",
+              "title": "###ADJECTIVE5LEFT### — ###ADJECTIVE5RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question88",
+              "title": "###ADJECTIVE6LEFT### — ###ADJECTIVE6RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question89",
+              "title": "###ADJECTIVE7LEFT### — ###ADJECTIVE7RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question90",
+              "title": "###ADJECTIVE8LEFT### — ###ADJECTIVE8RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page28",
+      "title": "Text 11\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question92",
+          "html": "<strong>###POST11###</strong>\n<p>Bitte bewerte die Sprache des Textes. </p> <p> Bewerte zunächste die Gesamtqualität des Textes und dann auf der darauf folgenden Seite die verwendete Sprache anhand der Adjektiv-Skalen. </p>\n<p>Versuche, den Inhalt des Textes nicht in deine Bewertung miteinfließen zu lassen.</p>"
+        }
+      ]
+    },
+    {
+      "name": "page29",
+      "title": "Text 11\n\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question95",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST11###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel20",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question93",
+              "html": "Bitte bewerte hier zunächste die Gesamtqualität des Textes. "
+            },
+            {
+              "type": "slider",
+              "name": "question94",
+              "title": "schlecht — gut",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page30",
+      "title": "Text 11\n\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question101",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST11###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel21",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question96",
+              "html": "Bitte bewerte nun die Sprache des Textes anhand der Adjektiv-Skalen. "
+            },
+            {
+              "type": "slider",
+              "name": "question97",
+              "title": "###ADJECTIVE5LEFT### — ###ADJECTIVE5RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question98",
+              "title": "###ADJECTIVE6LEFT### — ###ADJECTIVE6RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question99",
+              "title": "###ADJECTIVE7LEFT### — ###ADJECTIVE7RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question100",
+              "title": "###ADJECTIVE8LEFT### — ###ADJECTIVE8RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page31",
+      "title": "Text 12\n\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question102",
+          "html": "<strong>###POST12###</strong>\n<p>Bitte bewerte die Sprache des Textes. </p> <p> Bewerte zunächste die Gesamtqualität des Textes und dann auf der darauf folgenden Seite die verwendete Sprache anhand der Adjektiv-Skalen. </p>\n<p>Versuche, den Inhalt des Textes nicht in deine Bewertung miteinfließen zu lassen.</p>"
+        }
+      ]
+    },
+    {
+      "name": "page32",
+      "title": "Text 12\n\n\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question105",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST12###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel22",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question103",
+              "html": "Bitte bewerte hier zunächste die Gesamtqualität des Textes. "
+            },
+            {
+              "type": "slider",
+              "name": "question104",
+              "title": "schlecht — gut",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page33",
+      "title": "Text 12\n\n\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question111",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST12###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel23",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question106",
+              "html": "Bitte bewerte nun die Sprache des Textes anhand der Adjektiv-Skalen. "
+            },
+            {
+              "type": "slider",
+              "name": "question107",
+              "title": "###ADJECTIVE5LEFT### — ###ADJECTIVE5RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question108",
+              "title": "###ADJECTIVE6LEFT### — ###ADJECTIVE6RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question109",
+              "title": "###ADJECTIVE7LEFT### — ###ADJECTIVE7RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question110",
+              "title": "###ADJECTIVE8LEFT### — ###ADJECTIVE8RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page34",
+      "title": "Text 13\n\n\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question112",
+          "html": "<strong>###POST13###</strong>\n<p>Bitte bewerte die Sprache des Textes. </p> <p> Bewerte zunächste die Gesamtqualität des Textes und dann auf der darauf folgenden Seite die verwendete Sprache anhand der Adjektiv-Skalen. </p>\n<p>Versuche, den Inhalt des Textes nicht in deine Bewertung miteinfließen zu lassen.</p>"
+        }
+      ]
+    },
+    {
+      "name": "page35",
+      "title": "Text 13\n\n\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question115",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST13###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel24",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question113",
+              "html": "Bitte bewerte hier zunächste die Gesamtqualität des Textes. "
+            },
+            {
+              "type": "slider",
+              "name": "question114",
+              "title": "schlecht — gut",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page36",
+      "title": "Text 13\n\n\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question121",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST13###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel25",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question116",
+              "html": "Bitte bewerte nun die Sprache des Textes anhand der Adjektiv-Skalen. "
+            },
+            {
+              "type": "slider",
+              "name": "question117",
+              "title": "###ADJECTIVE5LEFT### — ###ADJECTIVE5RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question118",
+              "title": "###ADJECTIVE6LEFT### — ###ADJECTIVE6RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question119",
+              "title": "###ADJECTIVE7LEFT### — ###ADJECTIVE7RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question120",
+              "title": "###ADJECTIVE8LEFT### — ###ADJECTIVE8RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page37",
+      "title": "Text 14\n\n\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question122",
+          "html": "<strong>###POST14###</strong>\n<p>Bitte bewerte die Sprache des Textes. </p> <p> Bewerte zunächste die Gesamtqualität des Textes und dann auf der darauf folgenden Seite die verwendete Sprache anhand der Adjektiv-Skalen. </p>\n<p>Versuche, den Inhalt des Textes nicht in deine Bewertung miteinfließen zu lassen.</p>"
+        }
+      ]
+    },
+    {
+      "name": "page38",
+      "title": "Text 14\n\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question125",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST14###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel26",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question123",
+              "html": "Bitte bewerte hier zunächste die Gesamtqualität des Textes. "
+            },
+            {
+              "type": "slider",
+              "name": "question124",
+              "title": "schlecht — gut",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page39",
+      "title": "Text 14\n\n\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question131",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST14###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel27",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question126",
+              "html": "Bitte bewerte nun die Sprache des Textes anhand der Adjektiv-Skalen. "
+            },
+            {
+              "type": "slider",
+              "name": "question127",
+              "title": "###ADJECTIVE5LEFT### — ###ADJECTIVE5RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question128",
+              "title": "###ADJECTIVE6LEFT### — ###ADJECTIVE6RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question129",
+              "title": "###ADJECTIVE7LEFT### — ###ADJECTIVE7RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question130",
+              "title": "###ADJECTIVE8LEFT### — ###ADJECTIVE8RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page40",
+      "title": "Text 15\n\n\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question132",
+          "html": "<strong>###POST15###</strong>\n<p>Bitte bewerte die Sprache des Textes. </p> <p> Bewerte zunächste die Gesamtqualität des Textes und dann auf der darauf folgenden Seite die verwendete Sprache anhand der Adjektiv-Skalen. </p>\n<p>Versuche, den Inhalt des Textes nicht in deine Bewertung miteinfließen zu lassen.</p>"
+        }
+      ]
+    },
+    {
+      "name": "page41",
+      "title": "Text 15\n\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question135",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST15###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel28",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question133",
+              "html": "Bitte bewerte hier zunächste die Gesamtqualität des Textes. "
+            },
+            {
+              "type": "slider",
+              "name": "question134",
+              "title": "schlecht — gut",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "page42",
+      "title": "Text 15\n\n\n",
+      "elements": [
+        {
+          "type": "html",
+          "name": "question141",
+          "defaultDisplayValue": "blabla",
+          "html": "<strong>###POST15###</strong>"
+        },
+        {
+          "type": "panel",
+          "name": "panel29",
+          "elements": [
+            {
+              "type": "html",
+              "name": "question136",
+              "html": "Bitte bewerte nun die Sprache des Textes anhand der Adjektiv-Skalen. "
+            },
+            {
+              "type": "slider",
+              "name": "question137",
+              "title": "###ADJECTIVE5LEFT### — ###ADJECTIVE5RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question138",
+              "title": "###ADJECTIVE6LEFT### — ###ADJECTIVE6RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question139",
+              "title": "###ADJECTIVE7LEFT### — ###ADJECTIVE7RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            },
+            {
+              "type": "slider",
+              "name": "question140",
+              "title": "###ADJECTIVE8LEFT### — ###ADJECTIVE8RIGHT###",
+              "isRequired": true,
+              "min": -3,
+              "max": 3,
+              "customLabels": [
+                -3,
+                -2,
+                -1,
+                0,
+                1,
+                2,
+                3
+              ],
+              "labelCount": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "danke-01",
+      "title": "Vielen Dank!",
+      "elements": [
+        {
+          "type": "text",
+          "name": "danke-02",
+          "title": "Vielen Dank für deine Teilnahme! \nMöchtest du uns noch etwas mitteilen?"
+        }
+      ]
+    }
+  ],
+  "headerView": "advanced"
+}
