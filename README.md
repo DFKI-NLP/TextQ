@@ -7,3 +7,22 @@ The project deals with the Quality of Experience of machine-generated texts. The
 Please cite the following publication:
 
 Dinh Nam Pham, Vivien Macketanz, Shushen Manakhimova, Sebastian Möller. 2025. In: Proceedings of the 21st Conference on Natural Language Processing (KONVENS 2025): Workshops. (2025)
+
+```bibtex
+@inproceedings{pham-etal-2025-modeling,
+    title = "Modeling Quality of Experience in {G}erman Automatic Text Summarization and Machine Translation",
+    author = {Pham, Dinh Nam  and
+      Macketanz, Vivien  and
+      Manakhimova, Shushen  and
+      M{\"o}ller, Sebastian},
+    editor = "Wartena, Christian  and
+      Heid, Ulrich",
+    booktitle = "Proceedings of the 21st Conference on Natural Language Processing (KONVENS 2025): Workshops",
+    month = sep,
+    year = "2025",
+    address = "Hannover, Germany",
+    publisher = "HsH Applied Academics",
+    url = "https://aclanthology.org/2025.konvens-2.12/",
+    pages = "169--175"
+}
+
